@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 @import 'base/variables';
+@import 'base/mixins';
 
 * {
     font-family: 'Lobster', cursive;
@@ -25,4 +26,16 @@ p {
     margin: 0;
 }
 
-@import 'blocks/preloader'
+@import 'blocks/preloader';
+@import 'blocks/promo';
+@import 'blocks/button';
+@import 'blocks/aboute';
+@import 'blocks/title';
+@import 'blocks/scills';
+@import 'blocks/sidepanel';
+@import 'blocks/resume';
+@import 'blocks/price';
+@import 'blocks/portfolio';
+@import 'blocks/menu';
+@import 'blocks/media';
+@import 'blocks/contacts';
