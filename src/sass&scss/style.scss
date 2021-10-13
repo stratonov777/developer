@@ -1,15 +1,24 @@
 @import 'libs/bootstrap-reboot.min';
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url(http://fonts.googleapis.com/css?family=Bad+Script&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic);
+// 'Bad Script'
 
 @import 'base/variables';
 @import 'base/mixins';
 
+@import 'libs/animate';
 * {
     font-family: 'Lobster', cursive;
     margin: 0;
     padding: 0;
+    ::-webkit-scrollbar {
+        width: 0;
+    }
 }
-
+body{
+    color: #ffffff;
+    background:#1B0834;
+}
 .container {
     width: 1140px;
     margin: 0 auto;

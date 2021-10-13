@@ -12,7 +12,7 @@
         display: block;
         width: 30px;
         height: 3px;
-        background: #151812;
+        background: $main-color;
     }
     span.long {
         width: 36px;
@@ -37,7 +37,7 @@
     &__block {
         position: relative;
         width: 345px;
-        background-color: $main-color;
+        background-color: $color-burger;
         height: 100%;
         padding-top: 140px;
         padding-left: 40px;

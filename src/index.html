@@ -116,22 +116,33 @@
     </div>
     <div class="menu__overlay"></div>
 </div>
-
+<canvas></canvas>
 <section class="promo">
     <div class="hamburger">
         <span></span>
         <span class="long"></span>
         <span></span>
     </div>
+
     <div class="container">
-        <div class="title title_fz16 promo__subtitle">Меня зовут Александра Смит</div>
-        <h1 class="title title_fz48 promo__title">Я web-разработчик из города Москва</h1>
+        <div class="title title_fz16 promo__subtitle" id="logo">Меня зовут Дмитрий Стратонов</div>
+        <h1 class="title title_fz48 promo__title">Я web-разработчик из Екатеринбурга</h1>
+        <div class="promo__img">
+            <img src="img/competer/computer.png">
+            <img src="img/competer/blok.png" class="promo__img_blok animate__animated animate__pulse ">
+            <img src="img/competer/blok1.png" class="promo__img_blok1 animate__animated animate__pulse">
+            <img src="img/competer/blok2.png" class="promo__img_blok2 animate__animated animate__pulse">
+            <img src="img/competer/nout.png" class="promo__img_nout animate__animated animate__pulse">
+        </div> 
         <div class="promo__btns">
             <a href="#" class="promo__link btn">Портфолио</a>
-            <a href="#" class="promo__link">Про меня</a>
-        </div>
+            <a href="#" class="promo__link btn">Про меня</a>
+        </div>       
     </div>
+
+
 </section>
+
 
 <section class="about">
     <div class="container">
@@ -511,13 +522,11 @@
 
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script>$(window).on('load', function () {
-    var $preloader = $('#p_prldr'),
-        $svg_anm   = $preloader.find('.contpre_svg');
-    $svg_anm.delay(900).fadeOut();
-    $preloader.delay(1200).fadeOut('slow');
-});
-</script>
+<script src="https://rawgit.com/josephg/noisejs/master/perlin.js"></script>
 <script src="js/script.js"></script>
+<script src="js/preloader.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/canva.js"></script>
+
 </body>
 </html>
