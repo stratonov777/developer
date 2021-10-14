@@ -8,7 +8,7 @@
 
 @import 'libs/animate';
 * {
-    font-family: 'Lobster', cursive;
+    font-family: 'BadScript', cursive;
     margin: 0;
     padding: 0;
     ::-webkit-scrollbar {
@@ -17,7 +17,14 @@
 }
 body{
     color: #ffffff;
-    background:#1B0834;
+    background: rgb(2,0,36);
+    background: linear-gradient(170deg, rgba(2,0,36,1) 10%, rgba(66,57,214,1) 27%, rgba(9,9,121,1) 56%, rgba(0,212,255,1) 74%, rgba(0,212,255,1) 84%, rgba(0,0,0,1) 100%);
+}
+h1{
+    font-family: 'Lobster', cursive;
+}
+h2,h3,h4{
+    -webkit-text-stroke: 0.1px black;
 }
 .container {
     width: 1140px;

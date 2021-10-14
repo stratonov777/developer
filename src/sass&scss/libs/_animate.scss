@@ -179,6 +179,15 @@
     -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
+    animation-duration:1800ms;
+  }
+  .animate__pulse1 {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration:2800ms;
   }
 
   @-webkit-keyframes rotateInDownLeft {

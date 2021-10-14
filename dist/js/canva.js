@@ -87,7 +87,7 @@ const render = (trail, ctx, phase) => {
 }
 
 const clear = () => {
-    ctx.fillStyle = 'rgba(0, 0, 0, 0.03)';
+    ctx.fillStyle = 'rgba(0, 0, 0, 0)';
     ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 };
 
