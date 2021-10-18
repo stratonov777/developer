@@ -1,5 +1,8 @@
 .resume {
     padding-top: 120px;
+    a{
+        color: white;
+    }
     &__wrapper {
         padding: 60px 65px 0 65px;
         display: grid;
@@ -15,7 +18,7 @@
                 position: absolute;
                 width: 15px;
                 height: 15px;
-                background: $main-color;
+                background: $color-circle2;
                 border-radius: 100%;
                 left: -7px;
                 top: 50%;
@@ -33,7 +36,7 @@
                     position: absolute;
                     top: -16px;
                     left: 0;
-                    background-color: #000;
+                    background-color: rgb(255, 255, 255);
                 }
             }
         }
@@ -46,7 +49,7 @@
             width: 45px;
             position: absolute;
             top: 68px;
-            background-color: #000;
+            background-color: rgb(255, 255, 255);
         }
         &-head {
             position: relative;
@@ -68,6 +71,7 @@
                 position: absolute;
                 left: 17px;
                 top: 14px;
+                z-index: +2;
             }
         }
         &-location {

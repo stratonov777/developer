@@ -10,13 +10,14 @@
         position: relative;
         padding-left: 10px;
         z-index: 2;
-        @include before_circle;
+        @include before_circle2;
     }
     &__img{
         display: block;
         position: absolute;
         left: 50%;
         top: 50px;
+        z-index: +2;
         &_nout{
             position: absolute;
             top:85px;
@@ -54,16 +55,20 @@
         display: inline-block;
         color: #ffffff;
         font-weight: 700;
-        transition: all .6s ease-in-out;
         &:hover {
-            color: $color-burger;
+            color: white;
             text-decoration: none;
+            background:#7ef7e8cb; 
+            -moz-box-shadow:0 0 10px rgb(255, 255, 255); 
+            -webkit-box-shadow:0 0 10px rgb(255, 254, 254); 
+            box-shadow:0 0 10px rgb(255, 255, 255);
         }
     }
     h1{
         display: none;
     }
 }
+
 #logo{
     display: none;
 }
@@ -74,5 +79,5 @@ canvas {
     background: rgba(0, 0, 0, 0);
     left:580px;
     top:160px;
-    z-index: -10000;
+    z-index: +1;
   }

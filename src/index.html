@@ -42,9 +42,12 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+
 <div id="p_prldr">
     <div class="contpre">
         <img src="img/preloader.svg" alt="preloader">
@@ -153,7 +156,6 @@
                 <img src="img/main_photo.gif" alt="">
             </div>
             <div class="about__descr">
-                <h2 class="title title_fz16 about__title">Про меня</h2>
                 <div class="title title_fz36 about__subtitle">Меня зовут Дмитрий</div>
                 <div class="divider"></div>
                 <p class="about__text">Мне 23 года. Я учусь на 2 курсе магистратуры в УрФУ на отделении информатики и вычислительной техники. Данное направление позволят погрузиться в практические навыки использования современных методик управления проектами: от классического Waterfall до Agile и Kanban. Обладаю навыками взаимодействия в командах, построению отношений с заказчиками и партнерами, управлению собой, навыкам презентаций и публичных выступлений.</p>
@@ -207,8 +209,7 @@
 
 <section class="resume">
     <div class="container">
-        <h2 class="title title_fz16 title__section-title">Опыт</h2>
-        <div class="title title_fz36 title__section-subtitle">Чем я буду полезна</div>
+        <div class="title title_fz36 title__section-subtitle">Чем я буду полезен</div>
         <div class="divider"></div>
 
         <div class="resume__wrapper">
@@ -221,11 +222,11 @@
                                 <div class="resume__item-icon">
                                     <img src="icons/experience/university.svg" alt="university">
                                 </div>
-                                <h4 class="title title_fz14">МГТУ им. Н. Э. Баумана</h4>
-                                <div class="resume__item-location">Диплом магистра | Москва (2014-2020)</div>
+                                <h4 class="title title_fz14"><a href="https://urfu.ru/ru/">УрФУ имени Б. Н. Ельцина</a></h4>
+                                <div class="resume__item-location">Диплом бакалавра | Екатеринбург (2016-2020)</div>
                             </div>
                             <p class="resume__item-body">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. 
+                                Поступил на направление "нанотехнологии и микросистемная техника", занимался программированием на языках С++, Python, JS. Основными предметами были информатика, физика, математика, химия.   
                             </p>
                         </div>
                     </li>
@@ -235,11 +236,11 @@
                                 <div class="resume__item-icon">
                                     <img src="icons/experience/courses.svg" alt="courses">
                                 </div>
-                                <h4 class="title title_fz14">Udemy</h4>
+                                <h4 class="title title_fz14"><a href="https://beonmax.com/" alt="BeOnmax">BeOnmax</a></h4>
                                 <div class="resume__item-location">Курсы по Web-разработке </div>
                             </div>
                             <p class="resume__item-body">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. 
+                                Прошёл курсы по HTML, CSS, PHP, MySQL, BOTSTRAP, LINUX, Web-разработке и продолжаю обучение на этой платформе и других,таких как (Udemy,СберШкола), с каждым днём углубляя свои познания в Web-ремесле. 
                             </p>
                         </div>
                     </li>
@@ -255,10 +256,10 @@
                                     <img src="icons/experience/developer.svg" alt="developer">
                                 </div>
                                 <h4 class="title title_fz14">Front-End Developer</h4>
-                                <div class="resume__item-location">EPAM | Москва (2018-2019)</div>
+                                <div class="resume__item-location">Екатеринбург 2021-...</div>
                             </div>
                             <p class="resume__item-body">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. 
+                                Ищу работу в хорошей компании с интересными проектами и дружной командой). От себя гарантирую старание, усидчивость и предоставление услуг в сфере web-разработки.
                             </p>
                         </div>
                     </li>
@@ -269,10 +270,10 @@
                                     <img src="icons/experience/designer.svg" alt="designer">
                                 </div>
                                 <h4 class="title title_fz14">UI/UX Designer</h4>
-                                <div class="resume__item-location">Squad Team | Москва (2018)</div>
+                                <div class="resume__item-location">Figma | Avacado</div>
                             </div>
                             <p class="resume__item-body">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. 
+                                Знаю основы построения дизайн макета сайта. Верстаю сайты с макета и могу вносить правки по просьбе заказчиков.
                             </p>
                         </div>
                     </li>
@@ -284,104 +285,68 @@
 
 <section class="skills">
     <div class="container">
-        <h2 class="title title_fz16 title__section-title">Навыки</h2>
         <div class="title title_fz36 title__section-subtitle">Что я использую в работе</div>
         <div class="divider"></div>
-
         <div class="skills__items">
-            <div class="skills__item">
-                <div class="skills__item-img">
-                    <img src="icons/skills/html5.svg" alt="html5">
+            
+            <div class="skills__item" data-aos="fade-right" data-aos-duration="500">
+                <div class="skills__item-img" data-aos="fade-right"
+                data-aos-duration="500">
+                    <img src="icons/skills/html-css.jpg" alt="html5" >
                 </div>
-                <h3 class="title title_fz14">HTML5</h3>
-                <p>Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне создавать более SEO-оптимизированную структуру вашего продукта</p>
+                <p data-aos="fade-right"
+                data-aos-duration="500">HTML5 создает каркас вашего сайта или приложения, а CSS3 позволяет создавать абсолютно любой внешний вид продукта.</p>
             </div>
-            <div class="skills__item">
-                <div class="skills__item-img">
-                    <img src="icons/skills/css3.svg" alt="css3">
-                </div>
-                <h3 class="title title_fz14">CSS3</h3>
-                <p>Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта или приложения. Все ограничивается только вашей фантазией!</p>
-            </div>
-            <div class="skills__item">
-                <div class="skills__item-img">
-                    <img src="icons/skills/js.svg" alt="java script">
-                </div>
-                <h3 class="title title_fz14">Java Script</h3>
-                <p>Этот язык программирования позволяет оживить все что угодно: слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое</p>
-            </div>
-            <div class="skills__item">
-                <div class="skills__item-img">
-                    <img src="icons/skills/jquery.svg" alt="Jquery">
-                </div>
-                <h3 class="title title_fz14">Jquery</h3>
-                <p>Библиотека Jquery позволит ускорить разработку. Без необходимости интегрировать в проект мы её не будем, но навык работы с ней присутствует</p>
-            </div>
-            <div class="skills__item">
-                <div class="skills__item-img">
-                    <img src="icons/skills/react.svg" alt="React">
-                </div>
-                <h3 class="title title_fz14">React</h3>
-                <p>Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели</p>
-            </div>
-            <div class="skills__item">
-                <div class="skills__item-img">
-                    <img src="icons/skills/node.js.svg" alt="Node.js">
-                </div>
-                <h3 class="title title_fz14">Node.js</h3>
-                <p>Эта платформа позволяет создавать бэкенд для вашего продукта - “мозги”, которые будут выполнять действия, которые пользователь не видит</p>
-            </div>
-            <div class="skills__item">
-                <div class="skills__item-img">
-                    <img src="icons/skills/mongo.db.svg" alt="Mongo.db">
-                </div>
-                <h3 class="title title_fz14">Mongo.db</h3>
-                <p>Это нереляционная база данных, которая будет хранить данные вашего сайта или приложения</p>
-            </div>
-        </div>
 
-        <div class="skills__ratings">
-            <div class="skills__ratings-item">
-                <div class="title title_fz14 skills__ratings-title">Создание сайтов</div>
-                <div class="skills__ratings-counter">100%</div>
-                <div class="skills__ratings-line">
-                    <span></span>
+            <div class="skills__item" data-aos="fade-down" data-aos-duration="600">
+                <div class="skills__item-img" data-aos="fade-down" data-aos-duration="600">
+                    <img src="icons/skills/javascript-and-jquery.jpg" alt="javascript">
                 </div>
+                <p data-aos="fade-down" data-aos-duration="600">Этот язык программирования позволяет оживить все что угодно: слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое.</p>
             </div>
-            <div class="skills__ratings-item">
-                <div class="title title_fz14 skills__ratings-title">Создание приложений</div>
-                <div class="skills__ratings-counter">85%</div>
-                <div class="skills__ratings-line">
-                    <span></span>
+
+            <div class="skills__item" data-aos="fade-down" data-aos-duration="700">
+                <div class="skills__item-img" data-aos="fade-down" data-aos-duration="700">
+                    <img src="icons/skills/wordpres.png" alt="wordpres">
                 </div>
+                <p data-aos="fade-down" data-aos-duration="700">WordPress – это одна из наиболее популярных систем управления контентом на сайте (создание и публикация записей, размещение виджетов, расположение и отображение различных элементов)</p>
             </div>
-            <div class="skills__ratings-item">
-                <div class="title title_fz14 skills__ratings-title">Работа с данными</div>
-                <div class="skills__ratings-counter">90%</div>
-                <div class="skills__ratings-line">
-                    <span></span>
+
+            <div class="skills__item" data-aos="fade-left" data-aos-duration="800">
+                <div class="skills__item-img" data-aos="fade-left" data-aos-duration="800">
+                    <img src="icons/skills/php-and-mysql.jpg" alt="php-and-mysql">
                 </div>
+                <p data-aos="fade-left" data-aos-duration="800">PHP  - это распространённый язык специально сконструированный для веб-разработок и его код может внедряться непосредственно в HTML. MySQL — свободная реляционная система управления базами данных.</p>
             </div>
-            <div class="skills__ratings-item">
-                <div class="title title_fz14 skills__ratings-title">Креативность</div>
-                <div class="skills__ratings-counter">75%</div>
-                <div class="skills__ratings-line">
-                    <span></span>
+
+            <div class="skills__item" data-aos="fade-right" data-aos-duration="500">
+                <div class="skills__item-img" data-aos="fade-right"
+                data-aos-duration="500">
+                    <img src="icons/skills/illustrator.jpg" alt="illustrator">
                 </div>
+                <p data-aos="fade-right"
+                data-aos-duration="500">Adobe Illustrator – программа, которая используется художниками-иллюстраторами для создания веб-графики, работает с векторными изображениями.</p>
             </div>
-            <div class="skills__ratings-item">
-                <div class="title title_fz14 skills__ratings-title">Создание дизайна</div>
-                <div class="skills__ratings-counter">90%</div>
-                <div class="skills__ratings-line">
-                    <span></span>
+
+            <div class="skills__item" data-aos="fade-up" data-aos-duration="550">
+                <div class="skills__item-img" data-aos="fade-up" data-aos-duration="550">
+                    <img src="icons/skills/share-nodejs-logo.png" alt="Node.js">
                 </div>
+                <p data-aos="fade-up" data-aos-duration="550">Эта платформа позволяет создавать бэкенд для вашего продукта - “мозги”, которые будут выполнять действия, которые пользователь не видит</p>
             </div>
-            <div class="skills__ratings-item">
-                <div class="title title_fz14 skills__ratings-title">Soft skills</div>
-                <div class="skills__ratings-counter">95%</div>
-                <div class="skills__ratings-line">
-                    <span></span>
+
+            <div class="skills__item" data-aos="fade-up" data-aos-duration="600">
+                <div class="skills__item-img" data-aos="fade-up" data-aos-duration="600">
+                    <img src="icons/skills/React.jpg" alt="React">
                 </div>
+                <p data-aos="fade-up" data-aos-duration="600">Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели</p>
+            </div>
+
+            <div class="skills__item" data-aos="fade-left" data-aos-duration="650">
+                <div class="skills__item-img" data-aos="fade-left" data-aos-duration="650">
+                    <img src="icons/skills/bootstrap.jpg" alt="bootstrap">
+                </div>
+                <p data-aos="fade-left" data-aos-duration="650">Bootstrap — фреймворк, который используется веб-разработчиками для быстрой вёрстки адаптивных дизайнов сайтов и веб-приложений.</p>
             </div>
         </div>
     </div>
@@ -389,7 +354,6 @@
 
 <section class="portfolio">
     <div class="container">
-        <h2 class="title title_fz16 title__section-title">Портфолио</h2>
         <div class="title title_fz36 title__section-subtitle">Мои работы</div>
         <div class="divider"></div>
 
@@ -472,10 +436,9 @@
     <div class="container">
         <div class="contacts__wrapper">
             <div class="contacts__photo">
-                <img src="img/main_photo.jpg" alt="photo">
+                <img src="img/main_photo.png" alt="photo">
             </div>
             <div class="contacts__descr">
-                <h2 class="title title_fz16 contacts__title">Контакты</h2>
                 <div class="title title_fz36 contacts__subtitle">Свяжитесь со мной</div>
                 <div class="divider"></div>
 
@@ -527,10 +490,10 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://rawgit.com/josephg/noisejs/master/perlin.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="js/script.js"></script>
 <script src="js/preloader.js"></script>
-<script src="js/wow.min.js"></script>
 <script src="js/canva.js"></script>
-
+<script>AOS.init();</script>
 </body>
 </html>

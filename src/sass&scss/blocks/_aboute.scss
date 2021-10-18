@@ -56,5 +56,9 @@
             font-size: 12px;
             line-height: 18px;
         }
+        img{
+            position: absolute;
+            z-index: +2;
+        }
     }
 }

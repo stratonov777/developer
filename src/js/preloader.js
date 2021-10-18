@@ -6,7 +6,8 @@ $(window).on('load', function () {
     $preloader.delay(900).fadeOut('slow');
     setTimeout(function (){
         $("h1").fadeIn().addClass( "animate__animated animate__rotateInUpLeft" );
-        $("div#logo").fadeIn().addClass( "animate__animated animate__rotateInDownLeft" );
+        $("div#logo").fadeIn().addClass( "animate__animated animate__rotateInDownLeft" );    
       }, 1500);
     
 });
+

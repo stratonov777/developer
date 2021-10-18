@@ -1,7 +1,6 @@
 @import 'libs/bootstrap-reboot.min';
 @import url(http://fonts.googleapis.com/css?family=Bad+Script&subset=latin,cyrillic);
 @import url(http://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic);
-// 'Bad Script'
 
 @import 'base/variables';
 @import 'base/mixins';
@@ -11,14 +10,14 @@
     font-family: 'BadScript', cursive;
     margin: 0;
     padding: 0;
-    ::-webkit-scrollbar {
-        width: 0;
-    }
 }
-body{
+html,body{
+    max-width: 100%;
+    overflow-x: hidden;
     color: #ffffff;
     background: rgb(2,0,36);
-    background: linear-gradient(170deg, rgba(2,0,36,1) 10%, rgba(66,57,214,1) 27%, rgba(9,9,121,1) 56%, rgba(0,212,255,1) 74%, rgba(0,212,255,1) 84%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(170deg, rgba(2,0,36,1) 10%, rgba(66,57,214,1) 27%, rgba(9,9,121,1) 56%,rgba(66,57,214,1) 80%, rgba(0,0,0,1) 100%);
+    z-index: -2;
 }
 h1{
     font-family: 'Lobster', cursive;
@@ -32,7 +31,7 @@ h2,h3,h4{
 }
 
 .divider {
-    width: 60px;
+    width: 500px;
     height: 3px;
     background-color: $main-color;
     margin: 25px auto 0 auto;
@@ -41,6 +40,7 @@ h2,h3,h4{
 p {
     margin: 0;
 }
+
 
 @import 'blocks/preloader';
 @import 'blocks/promo';
@@ -55,3 +55,4 @@ p {
 @import 'blocks/menu';
 @import 'blocks/media';
 @import 'blocks/contacts';
+@import 'blocks/scroling';
